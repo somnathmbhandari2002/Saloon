@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Atelier | Unisex Salon</title>
+    <meta
+      name="description"
+      content="Aura Atelier is a premium unisex salon experience for hair, skin, grooming, spa, bridal styling, and confident transformations."
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a href="#home" class="brand" aria-label="Aura Atelier home">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>Aura Atelier</strong>
+          <small>Unisex Salon</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" data-nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experts">Experts</a>
+        <a href="#offers">Offers</a>
+        <a href="#booking">Book</a>
+      </nav>
+
+      <a class="header-action" href="#booking">Reserve</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow reveal">Signature hair, skin, grooming and ritual care</p>
+          <h1 class="reveal">Step into a look that feels made for you.</h1>
+          <p class="hero-copy reveal">
+            A refined unisex salon where expert stylists, calming interiors, and premium care turn every appointment into a confident transformation.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn primary" href="#booking">Book appointment</a>
+            <a class="btn ghost" href="#services">Explore services</a>
+          </div>
+          <div class="hero-stats reveal" aria-label="Salon highlights">
+            <span><strong>4.9</strong> guest rating</span>
+            <span><strong>32+</strong> signature rituals</span>
+            <span><strong>7</strong> expert artists</span>
+          </div>
+        </div>
+        <aside class="hero-panel reveal">
+          <p>Today at Aura</p>
+          <h2>Glow consultation is complimentary with every color or facial booking.</h2>
+          <a href="#offers">View offers</a>
+        </aside>
+      </section>
+
+      <section class="intro section-band">
+        <div class="section-inner intro-grid">
+          <div class="section-kicker reveal">Designed for everyone</div>
+          <h2 class="reveal">Precision, softness, and style intelligence in one calm destination.</h2>
+          <p class="reveal">
+            From sharp fades to glossy color, sculpted brows to bridal styling, each service starts with a consultation and ends with a finish that looks natural in your real life.
+          </p>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Menu</p>
+          <h2>Curated services</h2>
+          <p>Choose by mood, occasion, or maintenance rhythm. Pricing is transparent and appointments are shaped around your time.</p>
+        </div>
+
+        <div class="service-tabs reveal" aria-label="Service filters">
+          <button class="active" data-filter="all" type="button" aria-pressed="true">All</button>
+          <button data-filter="hair" type="button" aria-pressed="false">Hair</button>
+          <button data-filter="skin" type="button" aria-pressed="false">Skin</button>
+          <button data-filter="grooming" type="button" aria-pressed="false">Grooming</button>
+          <button data-filter="ritual" type="button" aria-pressed="false">Rituals</button>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal" data-category="hair">
+            <span>01</span>
+            <h3>Signature Cut and Finish</h3>
+            <p>Face-shape consultation, precision cut, wash, blow dry, and styling.</p>
+            <strong>From Rs. 899</strong>
+          </article>
+          <article class="service-card reveal" data-category="hair">
+            <span>02</span>
+            <h3>Color Couture</h3>
+            <p>Global color, balayage, gloss, root melt, or corrective tone plan.</p>
+            <strong>From Rs. 2,499</strong>
+          </article>
+          <article class="service-card reveal" data-category="skin">
+            <span>03</span>
+            <h3>Glass Skin Facial</h3>
+            <p>Deep cleanse, exfoliation, massage, targeted mask, and luminous finish.</p>
+            <strong>From Rs. 1,499</strong>
+          </article>
+          <article class="service-card reveal" data-category="grooming">
+            <span>04</span>
+            <h3>Beard Sculpt and Detail</h3>
+            <p>Shape mapping, hot towel, trimmer detail, razor line, and conditioning.</p>
+            <strong>From Rs. 599</strong>
+          </article>
+          <article class="service-card reveal" data-category="ritual">
+            <span>05</span>
+            <h3>Head Spa Therapy</h3>
+            <p>Scalp analysis, pressure-point massage, steam, cleanse, and serum care.</p>
+            <strong>From Rs. 1,299</strong>
+          </article>
+          <article class="service-card reveal" data-category="ritual">
+            <span>06</span>
+            <h3>Bridal and Event Styling</h3>
+            <p>Hair, makeup, drape styling, skin prep, and trial-ready finish.</p>
+            <strong>From Rs. 4,999</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section-band">
+        <div class="section-inner split">
+          <div class="experience-copy reveal">
+            <p class="section-kicker">The Aura method</p>
+            <h2>Beauty care with rhythm, restraint, and a little theatre.</h2>
+            <p>
+              The space is built for easy arrivals, thoughtful consultations, hygienic stations, and finishes that photograph beautifully without feeling overdone.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step reveal"><span>01</span><p>Consultation and hair or skin mapping.</p></div>
+            <div class="step reveal"><span>02</span><p>Personalized product and technique selection.</p></div>
+            <div class="step reveal"><span>03</span><p>Polished finish with home-care guidance.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Lookbook</p>
+          <h2>Made to be noticed</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item tall reveal">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Salon artist styling hair" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+            <figcaption>Gloss styling</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Modern salon interior" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+            <figcaption>Calm interiors</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Barber grooming service" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+            <figcaption>Sharp grooming</figcaption>
+          </figure>
+          <figure class="gallery-item wide reveal">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=80" alt="Elegant hair color result" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+            <figcaption>Color craft</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="experts section-band" id="experts">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Artists</p>
+            <h2>Specialists with a point of view</h2>
+          </div>
+          <div class="expert-grid">
+            <article class="expert-card reveal">
+              <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" alt="Senior hair stylist" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+              <h3>Mira Stone</h3>
+              <p>Color director</p>
+            </article>
+            <article class="expert-card reveal">
+              <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=700&q=80" alt="Grooming expert" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+              <h3>Arun Vale</h3>
+              <p>Grooming lead</p>
+            </article>
+            <article class="expert-card reveal">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80" alt="Skin care specialist" loading="lazy" decoding="async" data-fallback="assets/salon-hero.png" />
+              <h3>Sia Laurent</h3>
+              <p>Skin therapist</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers section" id="offers">
+        <div class="offer-main reveal">
+          <p class="section-kicker">Limited edit</p>
+          <h2>First visit glow package</h2>
+          <p>Consultation, signature cut or beard detail, express facial cleanse, and finish styling.</p>
+          <strong>Rs. 1,999</strong>
+          <a class="btn primary" href="#booking">Claim package</a>
+        </div>
+        <div class="offer-stack">
+          <article class="mini-offer reveal"><span>Couples</span><p>Weekend grooming and spa pairings.</p></article>
+          <article class="mini-offer reveal"><span>Bridal</span><p>Trial, prep, styling, and event-day care.</p></article>
+          <article class="mini-offer reveal"><span>Members</span><p>Monthly trims, facials, and product perks.</p></article>
+        </div>
+      </section>
+
+      <section class="testimonials section-band">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Guests</p>
+            <h2>Quiet luxury, loud compliments</h2>
+          </div>
+          <div class="testimonial-grid">
+            <blockquote class="reveal">
+              <span aria-label="Five star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>My haircut finally matches my face. The consultation felt personal and the finish lasted all week.</p>
+              <cite>Riya M.</cite>
+            </blockquote>
+            <blockquote class="reveal">
+              <span aria-label="Five star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>The beard sculpt was clean, precise, and the whole space felt premium without being intimidating.</p>
+              <cite>Daniel K.</cite>
+            </blockquote>
+            <blockquote class="reveal">
+              <span aria-label="Five star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>Best facial glow before an event. I booked my next appointment before leaving the chair.</p>
+              <cite>Amara J.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking section" id="booking">
+        <div class="booking-copy reveal">
+          <p class="section-kicker">Appointments</p>
+          <h2>Your chair is waiting.</h2>
+          <p>Share the service, date, and time you prefer. The salon team can connect this static form to WhatsApp, email, Google Forms, or a backend later.</p>
+          <div class="contact-strip">
+            <a href="tel:+919876543210">Call +91 98765 43210</a>
+            <a href="https://wa.me/919876543210">WhatsApp</a>
+          </div>
+        </div>
+        <form class="booking-form reveal">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Contact
+            <input type="text" name="contact" placeholder="Phone or email" required />
+          </label>
+          <label>
+            Service
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Signature cut and finish</option>
+              <option>Color couture</option>
+              <option>Glass skin facial</option>
+              <option>Beard sculpt and detail</option>
+              <option>Head spa therapy</option>
+              <option>Bridal and event styling</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Time
+              <input type="time" name="time" required />
+            </label>
+          </div>
+          <button class="btn primary form-submit" type="submit">Send request</button>
+          <p class="form-note" data-form-note>Open daily, 9:00 AM to 8:30 PM</p>
+          <a class="whatsapp-draft" href="#" data-whatsapp-link hidden>Open WhatsApp booking draft</a>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Aura Atelier</strong>
+        <p>Unisex salon for hair, skin, grooming, and occasion styling.</p>
+      </div>
+      <div>
+        <p>28 Velvet Lane, Bengaluru</p>
+        <p>Mon to Sun, 9:00 AM to 8:30 PM</p>
+      </div>
+    </footer>
+
+    <a class="mobile-book-now" href="#booking">Book now</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
