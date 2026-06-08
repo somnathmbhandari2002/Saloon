@@ -19,10 +19,13 @@
 
     <header class="site-header" data-header>
       <a href="#home" class="brand" aria-label="Aura Atelier home">
-        <span class="brand-mark">A</span>
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-a">A</span>
+          <span class="brand-spark"></span>
+        </span>
         <span>
           <strong>Aura Atelier</strong>
-          <small>Unisex Salon</small>
+          <small>Unisex Salon & Style Lab</small>
         </span>
       </a>
 
@@ -43,13 +46,29 @@
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-bg" data-hero-slider aria-hidden="true">
+          <figure class="hero-slide active">
+            <img src="assets/salon-hero.png" alt="" />
+          </figure>
+          <figure class="hero-slide">
+            <img src="assets/salon-ai-slide-1.webp" alt="" />
+          </figure>
+          <figure class="hero-slide">
+            <img src="assets/salon-ai-slide-2.webp" alt="" />
+          </figure>
+          <figure class="hero-slide">
+            <img src="assets/salon-ai-slide-3.webp" alt="" />
+          </figure>
+          <figure class="hero-slide">
+            <img src="assets/salon-ai-slide-4.webp" alt="" />
+          </figure>
+        </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow reveal">Signature hair, skin, grooming and ritual care</p>
-          <h1 class="reveal">Step into a look that feels made for you.</h1>
+          <p class="eyebrow reveal">Bengaluru's unisex style lab for hair, skin and grooming</p>
+          <h1 class="reveal">A look designed around your aura.</h1>
           <p class="hero-copy reveal">
-            A refined unisex salon where expert stylists, calming interiors, and premium care turn every appointment into a confident transformation.
+            Editorial hair, skin rituals, sharp grooming, and occasion styling shaped through consultation, craft, and a salon experience that feels unmistakably personal.
           </p>
           <div class="hero-actions reveal">
             <a class="btn primary" href="#booking">Book appointment</a>
@@ -60,12 +79,40 @@
             <span><strong>32+</strong> signature rituals</span>
             <span><strong>7</strong> expert artists</span>
           </div>
+          <div class="hero-carousel reveal" aria-label="Featured salon image slideshow">
+            <span data-hero-count>01 / 05</span>
+            <div class="hero-dots">
+              <button class="active" type="button" data-hero-dot="0" aria-label="Show salon interior slide" aria-pressed="true"></button>
+              <button type="button" data-hero-dot="1" aria-label="Show styling lab slide" aria-pressed="false"></button>
+              <button type="button" data-hero-dot="2" aria-label="Show hair transformation slide" aria-pressed="false"></button>
+              <button type="button" data-hero-dot="3" aria-label="Show grooming slide" aria-pressed="false"></button>
+              <button type="button" data-hero-dot="4" aria-label="Show skin ritual slide" aria-pressed="false"></button>
+            </div>
+          </div>
         </div>
         <aside class="hero-panel reveal">
           <p>Today at Aura</p>
-          <h2>Glow consultation is complimentary with every color or facial booking.</h2>
+          <h2>Complimentary face-shape, scalp, or skin mapping with every transformation booking.</h2>
           <a href="#offers">View offers</a>
         </aside>
+      </section>
+
+      <section class="signature-strip" aria-label="Aura Atelier signature highlights">
+        <div class="signature-item reveal">
+          <span>01</span>
+          <strong>Mirror consultation</strong>
+          <p>Face shape, routine, event, and lifestyle mapped before scissors or color touch you.</p>
+        </div>
+        <div class="signature-item reveal">
+          <span>02</span>
+          <strong>Ritual stations</strong>
+          <p>Dedicated hair, skin, grooming, and spa zones with premium hygiene flow.</p>
+        </div>
+        <div class="signature-item reveal">
+          <span>03</span>
+          <strong>Finish coaching</strong>
+          <p>Quick styling guidance so the look survives real Bengaluru days.</p>
+        </div>
       </section>
 
       <section class="intro section-band">
@@ -95,36 +142,42 @@
 
         <div class="service-grid">
           <article class="service-card reveal" data-category="hair">
+            <div class="service-visual visual-cut" aria-hidden="true"></div>
             <span>01</span>
             <h3>Signature Cut and Finish</h3>
             <p>Face-shape consultation, precision cut, wash, blow dry, and styling.</p>
             <strong>From Rs. 899</strong>
           </article>
           <article class="service-card reveal" data-category="hair">
+            <div class="service-visual visual-color" aria-hidden="true"></div>
             <span>02</span>
             <h3>Color Couture</h3>
             <p>Global color, balayage, gloss, root melt, or corrective tone plan.</p>
             <strong>From Rs. 2,499</strong>
           </article>
           <article class="service-card reveal" data-category="skin">
+            <div class="service-visual visual-skin" aria-hidden="true"></div>
             <span>03</span>
             <h3>Glass Skin Facial</h3>
             <p>Deep cleanse, exfoliation, massage, targeted mask, and luminous finish.</p>
             <strong>From Rs. 1,499</strong>
           </article>
           <article class="service-card reveal" data-category="grooming">
+            <div class="service-visual visual-beard" aria-hidden="true"></div>
             <span>04</span>
             <h3>Beard Sculpt and Detail</h3>
             <p>Shape mapping, hot towel, trimmer detail, razor line, and conditioning.</p>
             <strong>From Rs. 599</strong>
           </article>
           <article class="service-card reveal" data-category="ritual">
+            <div class="service-visual visual-spa" aria-hidden="true"></div>
             <span>05</span>
             <h3>Head Spa Therapy</h3>
             <p>Scalp analysis, pressure-point massage, steam, cleanse, and serum care.</p>
             <strong>From Rs. 1,299</strong>
           </article>
           <article class="service-card reveal" data-category="ritual">
+            <div class="service-visual visual-bridal" aria-hidden="true"></div>
             <span>06</span>
             <h3>Bridal and Event Styling</h3>
             <p>Hair, makeup, drape styling, skin prep, and trial-ready finish.</p>
@@ -153,7 +206,14 @@
       <section class="gallery section" id="gallery">
         <div class="section-heading reveal">
           <p class="section-kicker">Lookbook</p>
-          <h2>Made to be noticed</h2>
+          <h2>Made to be noticed before the first compliment.</h2>
+        </div>
+        <div class="lookbook-marquee reveal" aria-hidden="true">
+          <span>Gloss cuts</span>
+          <span>Balayage</span>
+          <span>Clean fades</span>
+          <span>Glass skin</span>
+          <span>Bridal glow</span>
         </div>
         <div class="gallery-grid">
           <figure class="gallery-item tall reveal">
